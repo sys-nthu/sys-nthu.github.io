@@ -1,7 +1,7 @@
 #!/bin/bash
 URL="https://sys-nthu.github.io"
 
-sh -c "cd ../lab-site ; HUGO_ENVIRONMENT=production hugo build --minify --baseURL $URL  --destination ../lab-site-deploy/public"
+sh -c "cd ../lab-site ; HUGO_ENVIRONMENT=production hugo build --minify --baseURL $URL  --destination ../lab-site-deploy/docs"
 
 echo "Staging changes..."
 git add .
